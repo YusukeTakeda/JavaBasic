@@ -8,11 +8,13 @@ package practice01;
 
 public class PTra01_02 {
 	public static void main(String[] args) {
+		System.out.println("Hello, world");
 
 		// ★ 12～14行目をコメントにしてください。
-		ここをコメントにしてください
-		ここをコメントにしてください
-		ここをコメントにしてください
+		/*あってるのかわからない。
+		 * 確認お願いします。
+		 * あと演習がどこにあるのか分からないです
+		 */
 
 		//  ★「Hello, world」と出力（コマンドプロンプトに表示）してください
 

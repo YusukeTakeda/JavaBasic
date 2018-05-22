@@ -22,6 +22,11 @@ public class PTra03_07 {
 		int num = Integer.parseInt(line);
 
 		//---------------------ここから本題-----------------------
+		if(num>=1 && num<=5) {
+			System.out.println(num);
+		}else {
+			System.out.println("選択したのは,1～5以外です");
+		}
 		/*
 		 * ★ 以下の仕様に沿ってプログラムを完成させてください
 		 *

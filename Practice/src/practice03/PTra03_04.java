@@ -21,7 +21,35 @@ public class PTra03_04 {
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになります
 		int num = Integer.parseInt(line);
 
+
 		//---------------------ここから本題-----------------------
+		if(num%4==0) {
+			if(num % 100 ==0) {
+				if(num % 400 ==0) {
+					System.out.println(num+"年はうるう年です。");
+				} else {
+					System.out.println(num+"年はうるう年ではありません。");
+				}
+			} else {
+				System.out.println(num+"年はうるう年です。");
+			}
+
+		} else {
+			System.out.println(num+"年はうるう年ではありません。");
+		}
+
+
+		//		if(num%4==0) {
+//				System.out.println(num+"年はうるう年です。");
+//		}else if(num%100==0){
+//			System.out.println(num+"年はうるう年ではありません。");
+//		}else if(num%400==0){
+//			System.out.println(num+"年はうるう年です。");
+//		}
+//		else {
+//			System.out.println(num+"年はうるう年ではありません。");
+//		}
+
 		/*
 		 * ★ 入力された値（西暦）がうるう年かどうか判定する条件式を追加してください
 		 *

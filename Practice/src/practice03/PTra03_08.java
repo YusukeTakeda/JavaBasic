@@ -22,8 +22,22 @@ public class PTra03_08 {
 		// コマンドプロンプトで入力した数値が変数numに代入されます
 		// ※ コマンドプロンプトで入力された値が、数字ではなかった場合はプログラムがエラーになります
 		int num = scanner.nextInt();
-
+		 
 		int money = 1000;	// 所持金
+		switch(num) {
+		case 1:
+			System.out.println(money-150);
+		    break;
+		case 2:
+			System.out.println(money-160);
+			break;
+		case 3:
+		    System.out.println(money-200);
+		    break;
+		  default:
+			  System.out.println("1-3を選択してください");
+		}
+		    
 
 		//---------------------ここから本題-----------------------
 		/*

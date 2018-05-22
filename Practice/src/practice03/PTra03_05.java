@@ -22,6 +22,18 @@ public class PTra03_05 {
 		int num = Integer.parseInt(line);
 
 		//---------------------ここから本題-----------------------
+	   if(num>75 && num<101) {
+		   System.out.println("雨が降る確率が高いです");
+		   
+	   }if(num>=30 && num<=74){
+		   System.out.println("雨が振るかもしれないです");
+	   }if(num<30) {
+		   System.out.println("雨はまず降らないでしょう");
+	   }if(num>100 || num<0) {
+			   System.out.println("不正な値が入力されました");
+		
+	
+	   	}
 		/*
 		 * ★ 以下の仕様に沿ってプログラムを完成させてください
 		 *

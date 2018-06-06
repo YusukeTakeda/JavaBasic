@@ -25,21 +25,42 @@ public class PTra10_05 {
 
 	public static void main(String[] args) {
 
+
 		// Carクラスを作成後に着手してください
 		// ★ Car型の変数carを宣言し、Carクラスのインスタンスを代入してください
-
-
+		Car car = new Car();
 		// ★ 変数carに格納されているインスタンスのserialNoフィールドに、10000を代入してください
-
-
+		car.serialNo = 10000;
 		// ★ 変数carに格納されているインスタンスのcolorフィールドに、"Red"を代入してください
-
-
+		car.color = "red";
 		// ★ 変数carに格納されているインスタンスのgasolineフィールドに、50を代入してください
-
-
+		car.gasoline = 50;
 		// 目的地までの距離
 		final int distance = 300;
+
+		int n = 0; //時間
+		int x ; //残りのガソリン
+		int susumi = 0;
+
+		while(true) {
+		susumi += car.run();
+		n++; //一回のループ（１時間ずつ増える）
+		x = car.gasoline;
+		System.out.println("現在の走行距離:"+susumi+" 残りのガソリン:"+x);
+
+			if(car.gasoline < 0) {
+				System.out.println("目的地に到達できませんでした");
+				break;
+			}
+
+			if(distance <= susumi) {
+				System.out.println("目的地にまで"+n+"時間かかりました。残りのガソリンは、"+x+"リットルです");
+				break;
+			}
+
+
+
+		}
 
 		/*
 		 * ★ 変数carに格納されているインスタンスメソッドrunを使って、目的地まで進んでください
@@ -49,4 +70,5 @@ public class PTra10_05 {
 		 */
 
 	}
+
 }

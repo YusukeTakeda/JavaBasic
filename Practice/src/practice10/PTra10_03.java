@@ -28,13 +28,22 @@ public class PTra10_03 {
 		String line = scanner.nextLine();
 		
 		// ★ 変数lineに格納されている値を','で区切り、配列にしてください（Stringクラスのメソッドを使用します）
-		public static String
+		String [] array = line.split(",");
 
 		// ★ 配列にした値を、usの各フィールドに代入してください
 		// ユーザIDに該当する値が数値でなかった場合は、エラーでプログラムが止まっても良いです
-
+		us.userId = Integer.parseInt(array[0]);
+		us.userNm = array[1];
+		us.mail = array[2];
+		us.password = array[3];
+		
 
 		// ★ 変数usに格納されているインスタンスの、フィールドuserId, userNm, mail, passwordを出力してください
+		System.out.println(""+us.userId);
+		System.out.println("ユーザ名:"+us.userNm);
+		System.out.println("メールアドレス:"+us.mail);
+		System.out.println("パスワード:"+us.password);
+		
 
 	}
 }

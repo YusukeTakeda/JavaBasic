@@ -7,6 +7,7 @@ package practice11;
  */
 
 	public class PTra11_03 {
+		private static final String PTra11_03 = null;
 		int number;
 
 	/*
@@ -31,6 +32,6 @@ package practice11;
 	public static void sum(int x, int y) {
 		System.out.println("sumメソッドを呼び出しました。" + x + "＋" + y + "＝" + (x + y));
 
-		System.out.println("クラスフィールドnumber：" /* + ★ クラスフィールドnumberの出力をしてください */);
+		System.out.println("クラスフィールドnumber："+(PTra11_03)/* + ★ クラスフィールドnumberの出力をしてください */);
 	}
 }

@@ -5,7 +5,7 @@
  * Copyright(c) Rhizome Inc. All Rights Reserved.
  */
 package practice13.ptra13;
-import practice13.common.Slime;;
+import practice13.common.Slime;
 
 public class PTra13_03 {
 
@@ -17,9 +17,9 @@ public class PTra13_03 {
 	public static void main(String[] args) {
 		Slime s = new Slime(10, 5, 2);
 		// ★ common.Slimeクラスをインスンタンス化してください
-		Slime.getName(スライム);
+		s.setName("スライム");
 		// ★ common.Slimeインスタンスのnameに"スライム"を設定して下さい
-		
+		System.out.println(s.showParameter());
 		// ★ common.Slimeインスタンスのキャラクター情報を表示してください
 
 	}

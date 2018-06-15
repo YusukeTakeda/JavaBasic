@@ -49,7 +49,7 @@ public class Student {
 	public String getPassword() {
 		return this.password;
 	}
-	
+
 	//setter
 	public void setStudentId(int studentId) {
 		this.studentId = studentId;

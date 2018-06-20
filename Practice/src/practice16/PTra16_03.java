@@ -7,6 +7,9 @@
 package practice16;
 
 public class PTra16_03 {
+	public String toString() {
+		return "PTra16_03#toString()の処理";
+	}
 
 	/*
 	 * toStringメソッドをオーバーライドしてください
@@ -17,6 +20,8 @@ public class PTra16_03 {
 	 */
 
 	public static void main(String[] args) {
+		PTra16_03 ptra16_03 = new PTra16_03();
+		System.out.println(ptra16_03);
 
 		// ★ PTra16_03クラスのtoStringメソッドの内容を出力してください
 

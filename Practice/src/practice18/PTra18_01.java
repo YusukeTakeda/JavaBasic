@@ -10,6 +10,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
+//import java.util.Iterator;
 
 public class PTra18_01 {
 	public static void main(String[] args) {
@@ -20,10 +21,15 @@ public class PTra18_01 {
             while (scanner.hasNext()) {
                 String line = scanner.nextLine();
                 // ★ 1行ごとにArrayListに格納してください
+                array.add(line);
 
             }
         } catch (FileNotFoundException e) {
             System.out.println("ファイルが見つかりません");
+        }
+        
+        for(String player : array) {
+        	System.out.println(player);
         }
 
 		// ★ ArrayListに格納された値を全て表示してください

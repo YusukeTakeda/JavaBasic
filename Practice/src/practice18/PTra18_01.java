@@ -10,7 +10,6 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
-//import java.util.Iterator;
 
 public class PTra18_01 {
 	public static void main(String[] args) {
